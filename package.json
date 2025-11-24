@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   // ADICIONE ESTA LINHA (substitua pelo seu usuário e repositório):
-  "homepage": "https://seu-usuario-github.github.io/nome-do-seu-repositorio", 
+  "homepage": "https://github.com/Mauriston/DGPM-406.git", 
   "type": "module",
   "scripts": {
     "dev": "vite",
