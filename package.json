@@ -2,16 +2,15 @@
   "name": "dgpm-406",
   "private": true,
   "version": "0.0.0",
-  // ADICIONE ESTA LINHA (substitua pelo seu usuário e repositório):
-  "homepage": "https://github.com/Mauriston/DGPM-406.git", 
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build",
-    "preview": "vite preview",
-    // ADICIONE ESTAS DUAS LINHAS:
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0"
   },
   "devDependencies": {
     "@types/node": "^22.14.0",

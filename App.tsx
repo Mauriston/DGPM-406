@@ -108,13 +108,17 @@ const App: React.FC = () => {
       {/* Overlay for mobile */}
       {isMenuOpen && (
         <div
-          className="lg:hidden fixed inset-0 bg-black opacity-50 z-30"
+          className="lg:hidden fixed inset-0 bg-black opacity-50 z-30 transition-opacity duration-300"
           onClick={() => setIsMenuOpen(false)}
         ></div>
       )}
 
       {/* Main Content */}
-      <main className="flex-1 lg:pl-72 transition-all duration-300">
+      <main 
+        className={`flex-1 lg:pl-72 transition-all duration-300 ${
+          isMenuOpen ? 'blur-sm lg:blur-none' : ''
+        }`}
+      >
         {renderPage()}
       </main>
     </div>
